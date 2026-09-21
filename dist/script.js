@@ -1,5 +1,6 @@
 const navLinks = [...document.querySelectorAll('.nav-link')];
 const sections = navLinks
+  .filter((link) => link.getAttribute('href')?.startsWith('#'))
   .map((link) => document.querySelector(link.getAttribute('href')))
   .filter(Boolean);
 
