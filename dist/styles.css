@@ -58,6 +58,8 @@ h3 { margin-bottom: 10px; font-size: 1.25rem; line-height: 1.4; }
 .section-heading p:not(.eyebrow) { color: var(--muted); }
 .on-dark p:not(.eyebrow) { color: #bcd7ca; }
 .section-heading-narrow { max-width: 730px; }
+.worksheet-heading { max-width: none; }
+.worksheet-heading h2 { white-space: nowrap; font-size: clamp(1rem, 4.6vw, 2.7rem); }
 .three-column { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .info-card { padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,255,255,.7); }
 .info-card p { margin-bottom: 0; color: var(--muted); }
@@ -148,10 +150,9 @@ h3 { margin-bottom: 10px; font-size: 1.25rem; line-height: 1.4; }
 .resource-item b, .resource-item small { display: block; }
 .resource-item small { color: #bcd7ca; font-size: 12px; }
 .resource-item > span:last-child { color: #9ee0bd; font-size: 13px; white-space: nowrap; }
-.site-footer { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding: 34px 0 46px; display: flex; align-items: center; justify-content: space-between; gap: 24px; color: var(--muted); font-size: 13px; }
-.site-footer strong, .site-footer span { display: block; }
-.site-footer strong { color: var(--green-deep); }
-.site-footer a { color: var(--green); font-weight: 800; text-decoration: none; white-space: nowrap; }
+.site-footer { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding: 34px 0 46px; color: var(--muted); font-size: 13px; text-align: center; }
+.site-footer p { max-width: 900px; margin: 0 auto; line-height: 1.8; }
+.site-footer a { display: inline-block; margin-top: 18px; color: var(--green); font-weight: 800; text-decoration: none; white-space: nowrap; }
 @media (max-width: 980px) {
   .nav-shell { flex-wrap: wrap; gap: 12px; padding: 14px 0; }
   .brand { margin-right: auto; }
@@ -173,8 +174,7 @@ h3 { margin-bottom: 10px; font-size: 1.25rem; line-height: 1.4; }
   .lesson-meta { grid-template-columns: 1fr; gap: 10px; }
   .observation-strip { display: block; }
   .observation-strip span { display: block; margin-top: 5px; }
-  .site-footer { display: block; }
-  .site-footer a { display: inline-block; margin-top: 18px; }
+  .site-footer { width: min(100% - 28px, 1180px); }
 }
 @media print {
   .site-header, .hero-actions, .print-button, .assessment-link-row, .site-footer a, .video-card .external { display: none !important; }
