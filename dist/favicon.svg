@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="投石車教案">
+  <rect width="64" height="64" rx="16" fill="#d9f0e5"/>
+  <path d="M12 46h40" stroke="#084c3b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M18 44 27 25l8 5 10-13" fill="none" stroke="#0d6b50" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="47" cy="15" r="6" fill="#e6a94e"/>
+  <circle cx="18" cy="48" r="5" fill="#0d6b50"/>
+  <circle cx="45" cy="48" r="5" fill="#0d6b50"/>
+</svg>
